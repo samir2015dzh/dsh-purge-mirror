@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Mirror upstream branches and tags
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.SYNC_TOKEN }}
         run: |
           set -e
           git clone --bare https://github.com/kingcharleslzy-ai/dsh-purge.git upstream.git
